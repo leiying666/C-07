@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int a = 0;
+	int b = 0;
+	char m[20] = { 0 };
+	printf("请输入密码:");
+	scanf("%s", m);
+	printf("请确认：");
+	while ((b = getchar()) != '\n')//与只有getchar（）相比，能多次提取，知道\n被提走
+	{
+		;
+	}
+	a = getchar();
+	if (a == 'y')
+	
+		printf("确认成功\n");
+	
+	else
+	
+		printf("放弃确认");
+	
+	return 0;
+}
